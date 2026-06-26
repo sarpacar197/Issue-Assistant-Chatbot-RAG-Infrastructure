@@ -4,10 +4,10 @@ import os, uuid, requests, html
 st.set_page_config("Issue Temp", layout="wide")
 
 if not os.environ.get("AZURE_OPENAI_API_KEY"):
-    st.title("Issue Assistant — Kod Demosu")
-    st.info("Bu bir kod gösterimidir. Canlı çalıştırmak için Azure/LLM "
-            "anahtarları gerekir. Tüm kaynak kod yukarıdaki **Files** "
-            "sekmesinde.")
+    st.title("Issue Assistant — Code Demo")
+    st.info("This is a code demonstration. Azure/LLM for live implementation. "
+            "keys are required. All source code is in the **Files** above."
+            )
     st.stop()
 
 
