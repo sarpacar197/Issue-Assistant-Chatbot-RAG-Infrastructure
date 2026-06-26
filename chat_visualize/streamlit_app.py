@@ -1,9 +1,7 @@
 import streamlit as st
-import requests, uuid, os, html
-from langchain_core.messages import HumanMessage
-from orchestrate import orchestrator
-from agent_core import fetch_data_from_image
+import os, uuid, requests, html
 
+st.set_page_config("Issue Temp", layout="wide")
 
 if not os.environ.get("AZURE_OPENAI_API_KEY"):
     st.title("Issue Assistant — Kod Demosu")
@@ -12,7 +10,12 @@ if not os.environ.get("AZURE_OPENAI_API_KEY"):
             "sekmesinde.")
     st.stop()
 
-st.set_page_config("Issue Temp", layout="wide")
+
+
+from langchain_core.messages import HumanMessage
+from orchestrate import orchestrator
+from agent_core import fetch_data_from_image
+
 API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
 
 #---------------------------------------------------------------#
