@@ -4,6 +4,14 @@ from langchain_core.messages import HumanMessage
 from orchestrate import orchestrator
 from agent_core import fetch_data_from_image
 
+
+if not os.environ.get("AZURE_OPENAI_API_KEY"):
+    st.title("Issue Assistant — Kod Demosu")
+    st.info("Bu bir kod gösterimidir. Canlı çalıştırmak için Azure/LLM "
+            "anahtarları gerekir. Tüm kaynak kod yukarıdaki **Files** "
+            "sekmesinde.")
+    st.stop()
+
 st.set_page_config("Issue Temp", layout="wide")
 API_URL = os.environ.get("API_URL", "http://127.0.0.1:8000")
 
