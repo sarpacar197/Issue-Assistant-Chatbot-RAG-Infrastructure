@@ -1,3 +1,15 @@
+---
+title: Issue Chatbot
+emoji: 🛠️
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: "1.40.0"
+app_file: chat_visualize/streamlit_app.py
+pinned: false
+---
+
+
 # Issue Assistant — Multi-Agent Chatbot (LangGraph + RAG)
 
 A conversational assistant that lets users perform product actions in natural
