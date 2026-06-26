@@ -1,0 +1,16 @@
+.env
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+
+
+.ipynb_checkpoints/
+
+
+weaviate_data/
+
